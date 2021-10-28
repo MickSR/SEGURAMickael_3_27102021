@@ -41,7 +41,7 @@ a {
     justify-content: center;
     align-items: center;
     background: #eaeaea; /*logiciel color picker*/
-    box-shadow:0px -5px 5px 0px #e0e0e0; /*logiciel scriptol*/
+    box-shadow:0px -5px 5px  #e0e0e0; /*logiciel scriptol*/
 }
 
 .location_search input{
@@ -57,3 +57,19 @@ a {
     text-align: center;
     padding-top: 20px;
 }
+
+.btn_description{
+    text-align: center;
+}
+
+.btn_description button{
+    border: 1px solid transparent;
+    padding: 12px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #ff79DA ,#de6eda,#db6dda, #9356DC );
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px grey;
+}
+
+.btn_description:
