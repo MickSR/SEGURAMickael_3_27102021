@@ -1,3 +1,59 @@
 Body{
     width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Tous les "header" */
+
+/*accueil*/
+Header h1{
+    text-align: center;
+}
+
+Header h1 img{
+    width: 150px;
+}
+
+/*menus*/
+a {
+    color:black;
+}
+
+.menu_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.return{
+    position: absolute;
+    left: 20px;
+    
+}
+
+/* Tous les "main" */
+
+/*accueil*/
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eaeaea; /*logiciel color picker*/
+    box-shadow:0px -5px 5px 0px #e0e0e0; /*logiciel scriptol*/
+}
+
+.location_search input{
+    background: #eaeaea;
+    border: none;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    font-size: 15px;
+    width: 150px;
+}
+
+.home_description{
+    text-align: center;
+    padding-top: 20px;
 }
