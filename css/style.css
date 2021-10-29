@@ -72,8 +72,95 @@ a {
     color: white;
     font-weight: bold;
     box-shadow: 0px 2px 4px grey;
+    margin-top: 10px;
 }
 
 .btn_description :hover{
-    
+    background-color: #b189e2;
+    background-blend-mode: lighten;
 }
+
+/* Toutes les sections 1 */
+
+/*section1*/
+.functioning{
+
+}
+
+.functioning h2{
+    padding:15px 0px 5px 20px;
+}
+
+.functioning ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.functioning li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 1px 2px 2px #e0e0e0;
+  padding:5px 10px 5px 35px;
+  margin: 10px 20px 15px 0px;
+  background-color: #fffdfd;
+  width: 300px;
+}
+
+.functioning li:hover{
+    background: #f5edff;
+}
+
+.functioning li:hover .fas{
+    color: #9356DC;
+}
+
+.functioning p{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.functioning_steps{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 4px 8px;
+    background-color: #9356DC;
+    color: white;
+    margin-left:-50px;
+}
+
+.fa-mobile-alt{
+    color: grey;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.fa-list-ul{
+    color: grey;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.fa-store{
+    color: grey;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+/* Toutes les sections 2 */
+
+/*section2*/
+.restaurant_title h3{
+    padding:15px 0px 5px 20px;
+}
+
+.card{
+    border: 1px solid black;
+}
+
