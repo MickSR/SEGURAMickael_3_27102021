@@ -61,15 +61,14 @@ a {
     padding-bottom: 40px;
 }
 
-.btn_description{
-    text-align: center;
-}
 
 .btn_description button{
-    border: 1px solid transparent;
-    padding: 13px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
     border-radius: 30px;
     background: linear-gradient(to bottom right, #ff79DA , #9356DC );
+    border-style: none;
     color: white;
     font-weight: bold;
     box-shadow: 0px 2px 4px grey;
@@ -120,12 +119,17 @@ a {
 }
 
 .meals{
-    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: white;
     border-radius: 20px;
     margin: 15px;
     padding: 10px;
     box-shadow: 1px 2px 2px #e0e0e0;
+    position: relative;
+    transition: padding-right 400ms ease-in-out;
+    cursor: pointer;
 }
 
 .meals h4{
@@ -141,21 +145,52 @@ a {
 .description_meals p{
     font-size: 15px;
     margin: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.description_meals span{
+    margin-right: 10px;
 }
 
 .validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid transparent;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #99E2D0;
     position: absolute;
     right: 0px;
-    padding: 20px;
+    width: 50px;
+    height: 66px;
+    opacity: 0;
+    transform-origin: right;
+    transform: scaleX(0.3);
+    transition: transform 300ms ease-in-out, opacity 400ms ease-in-out ;
+}
+
+/*animations menus*/
+.meals:hover {
+    padding-right: 80px;
+}
+
+.meals:hover .validation {
+    opacity: 1;
+    transform:scaleX(1);
+}
+
+.meals:hover .fa-check-circle {
+    transform: rotate(360deg);
+    transition: transform 400ms ease-in-out;
 }
 
 .fa-check-circle{
     color: white;
 }
+/*fin*/
 
 .btn_menu{
     text-align: center;
@@ -163,7 +198,8 @@ a {
 
 .btn_menu button{
     border: 1px solid transparent;
-    padding: 12px 40px;
+    width: 200px;
+    height: 50px;
     margin: 30px;
     border-radius: 30px;
     background: linear-gradient(to bottom right, #ff79DA , #9356DC );
