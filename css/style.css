@@ -87,6 +87,7 @@ a {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    margin-top: -10px;
 }
 
 .menu_creation{
@@ -103,6 +104,7 @@ a {
     align-items: center;
     padding: 10px 20px 0px 10px;
     font-family: "Shrikhand", sans-serif;
+    font-weight: normal;
 }
 
 .starter h3, .dishes h3, .dessert h3{
@@ -113,14 +115,65 @@ a {
 .line{
     border:  2px solid #99E2D0;
     margin-left: 15px;
+    margin-top: -10px;
     width: 40px;
 }
 
+.meals{
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 1px 2px 2px #e0e0e0;
+}
+
+.meals h4{
+    margin: 5px 0px;
+}
+
+.description_meals{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description_meals p{
+    font-size: 15px;
+    margin: 0px;
+}
+
+.validation {
+    border: 1px solid transparent;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #99E2D0;
+    position: absolute;
+    right: 0px;
+    padding: 20px;
+}
+
+.fa-check-circle{
+    color: white;
+}
+
+.btn_menu{
+    text-align: center;
+}
+
+.btn_menu button{
+    border: 1px solid transparent;
+    padding: 12px 40px;
+    margin: 30px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, #ff79DA , #9356DC );
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px grey;
+}
 
 
-
-
-/* Toutes les sections 1 */
+/* sections 1 */
 
 /*Accueil*/
 .functioning{
@@ -195,7 +248,7 @@ a {
     font-size: 20px;
 }
 
-/* Toutes les sections 2 */
+/* sections 2 */
 
 /*Accueil*/
 .restaurant{
