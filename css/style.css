@@ -5,6 +5,8 @@ Body{
     font-family: "Roboto", sans-serif;
 }
 
+/*loader*/
+
 /* Tous les "header" */
 
 /*accueil*/
@@ -212,9 +214,6 @@ a {
 /* sections 1 */
 
 /*Accueil*/
-.functioning{
-
-}
 
 .functioning h2{
     font-size: 20px;
@@ -302,6 +301,7 @@ a {
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /*getcssscan.com*/
     margin: 20px;
+    position: relative;
 }
 
 .new{
@@ -336,6 +336,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.fa-heart{
     font-size: 20px;
 }
 
@@ -409,4 +412,40 @@ footer li{
 .fa-hands-helping{
     font-size: 13px;
     margin-right: 10px;
+}
+
+/*adaptation tablette desktop*/
+
+@media screen and (min-width: 426px){
+
+    .functioning h2{
+        text-align: center;
+    }
+
+    .functioning ul  {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main_restaurant{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .restaurant_title{
+        text-align: center;
+    }
+
+    .card img{
+        width: 300px;
+    }
+
+    footer{
+        text-align: center;
+    }
 }
