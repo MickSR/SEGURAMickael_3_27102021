@@ -449,3 +449,23 @@ footer li{
         text-align: center;
     }
 }
+
+@media screen and (min-width: 1200px){
+
+    .menu_all{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+
+    .menu_creation{
+        width: 800px;
+        height: 1050px;
+        margin-left: 110px;
+    }
+}
+
+    
