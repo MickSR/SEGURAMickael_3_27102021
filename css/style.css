@@ -1,11 +1,65 @@
 Body{
     width: 100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
 }
 
 /*loader*/
+.loadingpage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0,0%,100%,.9);
+    opacity: 0;
+    animation: loadingpage_animation 3s;
+}
+
+.loadingpage_spinner {
+    width: 30px;
+    height: 30px;
+    margin: 350px auto;
+    border: 10px double #99E2D0;
+    border-right-color: transparent;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #ff79DA , #aa65ff );
+    box-shadow: 0 0 25px 6px #9356dc;
+    animation: loadingpage_spinner 2.5s linear infinite;
+}
+
+@keyframes loadingpage_animation{
+    0%{
+        opacity: 1;
+        z-index: 3;
+    }
+
+    80% {
+        opacity: 1;
+        z-index: 3;
+    }
+
+    100%{
+        opacity: 0;
+        z-index: 3;       
+    }
+}
+
+@keyframes loadingpage_spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 0 0 25px 8px #99e2d0;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 0 0 25px 8px #ff79DA;
+    }
+}
 
 /* Tous les "header" */
 
@@ -168,8 +222,31 @@ a {
     transform: scaleX(0.3);
     transition: transform 300ms ease-in-out, opacity 400ms ease-in-out ;
 }
-
 /*animations menus*/
+.starter:nth-child(1n) {
+    animation: slideInUp 0.75s;
+}
+
+.dishes:nth-child(2n) {
+    animation: slideInUp 1.4s;
+}
+
+.dessert:nth-child(3n){
+    animation: slideInUp 2.1s;
+}
+
+@keyframes slideInUp {
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*animations validations menus*/
 .meals:hover {
     padding-right: 80px;
 }
