@@ -540,8 +540,11 @@ footer li{
     }
 
     .meals{
-        width: 300px;
-    
+        width: 300px
+    }
+
+    .description_meals:hover{
+        margin-right: -30px;
     }
 
     .meals h4{
