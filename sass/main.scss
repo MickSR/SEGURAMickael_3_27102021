@@ -15,7 +15,7 @@
 	border: 10px double $color_water_leaf_approx;
 	border-right-color: transparent;
 	@include border-radius($radius_50);
-	background: linear-gradient(to bottom right, $color_persian_pink_approx , $color_heliotrope_approx );
+	background: $linear-gradient;
 	@include box-shadow($shadow-1 $color_medium_purple_approx);
 	animation: loadingpage_spinner 2.5s linear infinite;
 }
@@ -34,7 +34,7 @@ a {
 .location {
 	@include flexbox-center;
 	background: $color_mercury_approx;
-	@include box-shadow ($shadow-2, $color_mercury_approx);
+	box-shadow: ($shadow-2, $color_mercury_approx);
 }
 .fa-map-marker-alt {
 	margin-right: 10px;
@@ -51,12 +51,12 @@ a {
 		text-align: center;
 		width: 200px;
 		height: 50px;
-		@include border-radius($radius_30);
-		background: linear-gradient(to bottom right, $color_persian_pink_approx , $color_medium_purple_approx );
+		border-radius: 50%;
+		background: $linear-gradient;
 		border-style: none;
 		color: $white;
 		font-weight: bold;
-		@include box-shadow ($shadow-3 , $gray);
+		box-shadow : ($shadow-3 , $gray);
 		margin-top: 10px;
 	}
 	:hover {
@@ -118,7 +118,7 @@ a {
 	border-radius: 20px;
 	margin: 15px;
 	padding: 10px;
-	box-shadow: 1px 2px 2px $color_mercury_approx;
+	box-shadow: ($shadow-4 , $color_mercury_approx);
 	position: relative;
 	transition: padding-right 400ms ease-in-out;
 	cursor: pointer;
@@ -177,7 +177,7 @@ a {
 		height: 50px;
 		margin: 20px 30px 30px;
 		border-radius: 30px;
-		background: linear-gradient(to bottom right, $color_persian_pink_approx , $color_medium_purple_approx );
+		background: $linear-gradient;
 		color: $white;
 		font-weight: bold;
 		@include box-shadow ($shadow-3, $gray);
@@ -208,7 +208,7 @@ a {
 		align-items: center;
 		border: 1px solid transparent;
 		border-radius: 20px;
-		box-shadow: 1px 2px 2px $color_mercury_approx;
+		box-shadow: ($shadow-4 , $color_mercury_approx);
 		padding: 5px 10px 5px 35px;
 		margin: 10px 20px 15px 0;
 		background-color: $color_rose_white_approx;
@@ -228,7 +228,7 @@ a {
 }
 .functioning_steps {
 	border: 1px solid transparent;
-	@include border-radius($radius_50);
+	border-radius: 50%;
 	padding: 4px 8px;
 	background-color: $color_medium_purple_approx;
 	color: $white;
@@ -293,7 +293,7 @@ a {
 	&:hover {
 		animation: fill 600ms ease-in-out;
 		opacity: 1;
-		background: linear-gradient(to right, $color_medium_purple_approx, $color_persian_pink_approx);
+		background: $linear-gradient;
 		font-weight: bold;
 	}
 }
