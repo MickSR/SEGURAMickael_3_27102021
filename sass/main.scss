@@ -79,8 +79,7 @@ a {
 }
 .starter {
 	h3 {
-		text-transform: uppercase;
-		margin-left: 15px;
+		@include uppercase;
 	}
 	&:nth-child(1n) {
 		animation: slideInUp 0.75s;
@@ -88,8 +87,7 @@ a {
 }
 .dishes {
 	h3 {
-		text-transform: uppercase;
-		margin-left: 15px;
+		@include uppercase;
 	}
 	&:nth-child(2n) {
 		animation: slideInUp 1.4s;
@@ -97,8 +95,7 @@ a {
 }
 .dessert {
 	h3 {
-		text-transform: uppercase;
-		margin-left: 15px;
+		@include uppercase;
 	}
 	&:nth-child(3n) {
 		animation: slideInUp 2.1s;
