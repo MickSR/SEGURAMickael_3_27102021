@@ -1,0 +1,53 @@
+@keyframes loadingpage_animation {
+	0% {
+		opacity: 1;
+		z-index: 3;
+	}
+	80% {
+		opacity: 1;
+		z-index: 3;
+	}
+	100% {
+		opacity: 0;
+		z-index: 3;
+	}
+}
+@keyframes loadingpage_spinner {
+	0% {
+		@include transform($rotate-1);
+	}
+	50% {
+		@include transform($rotate-2);
+		@include box-shadow($shadow-1 ,$color_water_leaf_approx);
+	}
+	100% {
+		@include transform($rotate-3);
+		@include box-shadow($shadow-1, $color_persian_pink_approx);
+	}
+}
+
+@keyframes slideInUp {
+	0% {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+.fa-check-circle {
+	color: $white;
+}
+
+@keyframes fill {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
