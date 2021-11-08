@@ -14,15 +14,15 @@
 }
 @keyframes loadingpage_spinner {
 	0% {
-		@include transform($rotate-1);
+		transform: rotate(0deg);
 	}
 	50% {
-		@include transform($rotate-2);
-		@include box-shadow($shadow-1 ,$color_water_leaf_approx);
+	    transform: rotate(180deg);
+		box-shadow: ($shadow-1 ,$color_water_leaf_approx);
 	}
 	100% {
-		@include transform($rotate-3);
-		@include box-shadow($shadow-1, $color_persian_pink_approx);
+		transform: rotate(360deg);
+		box-shadow: ($shadow-1, $color_persian_pink_approx);
 	}
 }
 

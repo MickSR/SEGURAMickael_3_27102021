@@ -14,9 +14,9 @@
 	margin: 350px auto;
 	border: 10px double $color_water_leaf_approx;
 	border-right-color: transparent;
-	@include border-radius($radius_50);
+	border-radius: 50%;
 	background: $linear-gradient;
-	@include box-shadow($shadow-1 $color_medium_purple_approx);
+	box-shadow : ($shadow-1  $color_medium_purple_approx);
 	animation: loadingpage_spinner 2.5s linear infinite;
 }
 
@@ -34,7 +34,7 @@ a {
 .location {
 	@include flexbox-center;
 	background: $color_mercury_approx;
-	box-shadow: ($shadow-2, $color_mercury_approx);
+	box-shadow: ($shadow-2 $color_mercury_approx);
 }
 .fa-map-marker-alt {
 	margin-right: 10px;
@@ -132,7 +132,7 @@ a {
 			transform: scaleX(1);
 		}
 		.fa-check-circle {
-			@include transform ($rotate-3);
+			transform: $rotate-3;
 			transition: transform 400ms ease-in-out;
 		}
 	}
@@ -177,7 +177,7 @@ a {
 		background: $linear-gradient;
 		color: $white;
 		font-weight: bold;
-		@include box-shadow ($shadow-3, $gray);
+		box-shadow: ($shadow-3, $gray);
 		cursor: pointer;
 		&:hover {
 			background-color: $color_lavender_approx;
@@ -331,17 +331,13 @@ footer {
 			text-align: center;
 		}
 		ul {
+			@include flexbox-space-arround;
 			flex-wrap: wrap;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
 			align-items: center;
 		}
 	}
 	.main_restaurant {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
+		@include flexbox-space-arround;
 		flex-flow: row wrap;
 	}
 	.restaurant_title {
@@ -356,9 +352,7 @@ footer {
 }
 @media screen and(min-width: 1200px) {
 	.menu_all {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
+		@include flexbox-space-arround;
 	}
 	.meals {
 		width: 300px;

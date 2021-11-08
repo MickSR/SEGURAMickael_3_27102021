@@ -11,6 +11,12 @@
     align-items: center;
 }
 
+@mixin flexbox-space-arround {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
 @mixin icons {
     color: $gray;
 	margin-left: 20px;
