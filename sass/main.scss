@@ -1,5 +1,12 @@
 @import "./utils/variables" , "./utils/mixins" , "./utils/keyframes";
 
+Body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
 .loadingpage {
 	position: fixed;
 	width: 100%;
@@ -18,6 +25,28 @@
 	background: $linear-gradient;
 	box-shadow : ($shadow-1  $color_medium_purple_approx);
 	animation: loadingpage_spinner 2.5s linear infinite;
+}
+
+Header h1 {
+	text-align: center;
+	img {
+		width: 150px;
+	}
+}
+.main_img img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	margin-top: -10px;
+}
+
+.menu_header {
+	@mixin flexbox-space-between;
+}
+
+.restaurant_title h3 {
+	font-size: 20px;
+	padding: 15px 0 5px 20px;
 }
 
 a {
@@ -51,12 +80,12 @@ a {
 		text-align: center;
 		width: 200px;
 		height: 50px;
-		border-radius: 50%;
+		border-radius: 40px;
 		background: $linear-gradient;
 		border-style: none;
 		color: $white;
 		font-weight: bold;
-		box-shadow : ($shadow-3 , $gray);
+		box-shadow : ($shadow-3 $color_mercury_approx);
 		margin-top: 10px;
 	}
 	:hover {
@@ -69,6 +98,7 @@ a {
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 	margin-top: -60px;
+	padding-bottom: 20px;
 	position: relative;
 }
 .menu_title {
@@ -205,10 +235,10 @@ a {
 		align-items: center;
 		border: 1px solid transparent;
 		border-radius: 20px;
-		box-shadow: ($shadow-4 , $color_mercury_approx);
+		box-shadow: ($shadow-4  $color_mercury_approx);
 		padding: 5px 10px 5px 35px;
 		margin: 10px 20px 15px 0;
-		background-color: $color_mercury_approx;
+		background-color: $wild_sand;
 		width: 300px;
 		&:hover {
 			background: $color_blue_chalk_approx;
@@ -291,6 +321,8 @@ a {
 		animation: fill 600ms ease-in-out;
 		opacity: 1;
 		background: $linear-gradient;
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
 		font-weight: bold;
 	}
 }
@@ -374,19 +406,6 @@ footer {
 	}
 }
 
-Header h1 {
-	text-align: center;
-	img {
-		width: 150px;
-	}
-}
-.main_img img {
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
-	margin-top: -10px;
-}
-.restaurant_title h3 {
-	font-size: 20px;
-	padding: 15px 0 5px 20px;
+.menu_header {
+	@mixin flexbox-space-between;
 }
