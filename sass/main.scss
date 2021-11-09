@@ -306,6 +306,7 @@ a {
 }
 .like {
 	@include flexbox-space-between;
+	cursor: pointer;
 	h4 {
 		margin: 0;
 		font-size: 18px;
