@@ -431,6 +431,9 @@ a {
 }
 
 .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   
   border: 1px solid transparent;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;

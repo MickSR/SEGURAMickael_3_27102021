@@ -271,6 +271,7 @@ a {
 	padding: 20px 0;
 }
 .card {
+	@include flexbox-space-between;
 	border: 1px solid transparent;
 	border-radius: 25px;
 	box-shadow: $black_10 0 4px 12px;
