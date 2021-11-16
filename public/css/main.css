@@ -19,11 +19,11 @@
   }
   50% {
     transform: rotate(180deg);
-    box-shadow: 0 0 25px 6px, #99e2d0;
+    box-shadow: 0 0 25px 6px #579182;
   }
   100% {
     transform: rotate(360deg);
-    box-shadow: 0 0 25px 6px, #ff79da;
+    box-shadow: 0 0 25px 6px #ff79da;
   }
 }
 
@@ -271,7 +271,7 @@ a {
   border-radius: 20px;
   margin: 15px;
   padding: 10px;
-  box-shadow: 1px 2px 2px, #eaeaea;
+  box-shadow: 1px 2px 2px #eaeaea;
   position: relative;
   transition: padding-right 400ms ease-in-out;
   cursor: pointer;
@@ -347,7 +347,7 @@ a {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: #fff;
   font-weight: bold;
-  box-shadow: 0 2px 4px, #808080;
+  box-shadow: 0 2px 4px #808080;
   cursor: pointer;
 }
 
